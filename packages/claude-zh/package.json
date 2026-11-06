@@ -1,0 +1,82 @@
+{
+  "name": "@magpie-community/page-claude-zh",
+  "version": "0.1.0",
+  "description": "在 Windows 上为 Claude Desktop 的第三方 Gateway 模式加载简体或繁体中文界面，不修改 Claude 安装文件。Simplified and Traditional Chinese for Claude Desktop's third-party Gateway mode on Windows, without modifying the Claude installation.",
+  "type": "module",
+  "main": "./integrations/magpie/server.mjs",
+  "exports": "./integrations/magpie/server.mjs",
+  "bin": {
+    "claude-desktop-zh": "./bin/claude-3p-zh.mjs",
+    "claude-3p-zh": "./bin/claude-3p-zh.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "integrations",
+    "scripts/build-runtime-localization.mjs",
+    "scripts/test-runtime-autoload.ps1",
+    "scripts/check-package.mjs",
+    ".catalogs",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "LICENSES"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node bin/claude-3p-zh.mjs help",
+    "prepack": "node scripts/check-package.mjs"
+  },
+  "author": "Ethan L (https://github.com/ethanweave)",
+  "contributors": [
+    "polang233 (https://github.com/polang233)",
+    "javaht (https://github.com/javaht)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magpie-community/plugins.git",
+    "directory": "packages/claude-zh"
+  },
+  "homepage": "https://github.com/magpie-community/plugins/tree/main/packages/claude-zh#readme",
+  "bugs": {
+    "url": "https://github.com/magpie-community/plugins/issues"
+  },
+  "keywords": [
+    "magpie",
+    "magpie-page",
+    "magpie-plugin",
+    "claude",
+    "claude-desktop",
+    "chinese",
+    "localization",
+    "windows"
+  ],
+  "engines": {
+    "node": ">=22",
+    "magpie": ">=0.1.1340"
+  },
+  "dependencies": {
+    "@electron/asar": "^4.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "magpie": {
+    "name": "Claude Desktop 中文",
+    "summary": {
+      "en": "Simplified and Traditional Chinese for Claude Desktop in third-party Gateway mode on Windows. Loads MIT-licensed Chinese catalogs into the running frontend without modifying Claude's files, and supports current builds that ship ion-dist.asar. Requires Node.js 22+, does not bypass Claude sign-in, and may briefly show DevTools and native file dialogs while applying.",
+      "zh": "在 Windows 上为 Claude Desktop 的第三方 Gateway 模式加载简体或繁体中文。把 MIT 许可的中文词典写入运行中的前端，不改 Claude 安装文件，并支持当前使用 ion-dist.asar 的版本。需要 Node.js 22+，不绕过 Claude 登录，应用时可能短暂出现调试窗口和文件选择框。"
+    },
+    "page": {
+      "title": "Claude Desktop 中文",
+      "titles": {
+        "zh": "Claude Desktop 中文"
+      },
+      "file": "integrations/magpie/page/index.html",
+      "icon": "integrations/magpie/page/icon.png"
+    },
+    "permissions": []
+  }
+}

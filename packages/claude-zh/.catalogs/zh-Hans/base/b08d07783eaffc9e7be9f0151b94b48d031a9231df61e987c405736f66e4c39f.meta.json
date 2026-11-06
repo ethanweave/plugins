@@ -1,0 +1,12 @@
+{
+  "locale": "zh-Hans",
+  "kind": "base",
+  "sha256": "b08d07783eaffc9e7be9f0151b94b48d031a9231df61e987c405736f66e4c39f",
+  "keys": 43200,
+  "source": "javaht/claude-desktop-zh-cn",
+  "sourcePath": "resources/frontend-zh-CN.json",
+  "sourceCommit": "ea071d1692b7282377b8f22cb7723b9c576a5346",
+  "sourceSha256": "2364eff7f12ae839205963c478aa617bf00a45e6dad16338b593feb5a5e0daed",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2025 javaht"
+}

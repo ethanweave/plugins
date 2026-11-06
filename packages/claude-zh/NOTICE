@@ -1,0 +1,24 @@
+This project is not affiliated with Anthropic or magpie.
+
+The MIT license covers this project's code, documentation and the bundled
+Chinese message catalogs. Claude Desktop and its official resources belong to
+Anthropic and their respective rights holders. No Claude executable or
+application bundle is distributed by this project.
+
+This package is derived from polang233/claude-desktop-zh at commit
+baa2d548cf55d93f54757bced38f181e0e9b5f64. The original project is MIT licensed;
+its copyright notice is retained in LICENSE and
+LICENSES/claude-desktop-zh-MIT.txt.
+
+The bundled .catalogs/zh-Hans files are derived from javaht/claude-desktop-zh-cn
+at commit ea071d1692b7282377b8f22cb7723b9c576a5346:
+
+  resources/frontend-zh-CN.json -> base catalog
+  resources/dynamic-zh-CN.json  -> dynamic catalog
+
+That project is MIT licensed, copyright (c) 2025 javaht. Its license is retained
+in LICENSE and LICENSES/javaht-MIT.txt. Each catalog's provenance, upstream
+path and source hash are recorded in its adjacent .meta.json file.
+
+lib/vendor/js-tokens.mjs is js-tokens 10.0.0 by Simon Lydell. Its MIT license is
+included in lib/vendor/js-tokens.LICENSE.

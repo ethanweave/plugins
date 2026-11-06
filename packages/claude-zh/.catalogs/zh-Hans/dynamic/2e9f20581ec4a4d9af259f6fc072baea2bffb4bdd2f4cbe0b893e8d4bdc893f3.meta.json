@@ -1,0 +1,12 @@
+{
+  "locale": "zh-Hans",
+  "kind": "dynamic",
+  "sha256": "2e9f20581ec4a4d9af259f6fc072baea2bffb4bdd2f4cbe0b893e8d4bdc893f3",
+  "keys": 49,
+  "source": "javaht/claude-desktop-zh-cn",
+  "sourcePath": "resources/dynamic-zh-CN.json",
+  "sourceCommit": "ea071d1692b7282377b8f22cb7723b9c576a5346",
+  "sourceSha256": "07d94a1399e77a12bce9ab01de571a6de2ea9e6a48f981b945ae422b55a1dc4b",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2025 javaht"
+}

@@ -204,6 +204,17 @@
       }
     },
     {
+      "package": "@magpie-community/page-claude-zh",
+      "name": "Claude Desktop 中文",
+      "kind": "page",
+      "community": true,
+      "icon": "https://raw.githubusercontent.com/magpie-community/plugins/main/packages/claude-zh/integrations/magpie/page/icon.png",
+      "summary": {
+        "en": "Unofficial Windows-only Chinese UI for Claude Desktop's third-party Gateway mode. Replaces the unusable `magpie-claude-zh` on current Claude builds by reading `ion-dist.asar`, caching a version-keyed frontend and applying an MIT-licensed zh-Hans catalog in the running page without modifying Claude's binaries. It does not bypass sign-in, requires Node.js 22+, and may briefly open DevTools and file dialogs. Simplified and Traditional Chinese are selectable.",
+        "zh": "非官方、仅限 Windows：为 Claude Desktop 第三方 Gateway 模式加载简体或繁体中文。针对当前使用 `ion-dist.asar` 的 Claude 版本，替代已无法使用的 `magpie-claude-zh`；只读取并缓存前端，在运行中的页面加载 MIT 许可的中文词典，不修改 Claude 二进制、不绕过登录。需要 Node.js 22+，应用时可能短暂出现调试窗口和文件选择框。"
+      }
+    },
+    {
       "package": "@magpie-community/page-window-warmup",
       "name": "Window Warmup",
       "kind": "page",
